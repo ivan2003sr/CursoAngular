@@ -1,1 +1,14 @@
-<p>empleado works!</p>
+<p>Nombre del Empleado: {{nombre.value}}</p>
+<p>Apellido del Empleado: {{apellido}}</p>
+<p>Edad del Empleado: {{getEdad()>18 ? "Mayor de edad" : "Menor de edad"}}</p>
+<p>Empresa del Empleado: {{empresa.value}}</p>
+
+Introduce nombre: <input type="text" #nombre (keyup)=0>
+
+Introduce la empresa: <input type="text" #empresa>
+
+<br/>
+<br/>
+
+<input type="button" value="Dale!" (click)="llamaEmpresa(empresa.value)"/>
+
