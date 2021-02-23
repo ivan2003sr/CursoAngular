@@ -23,10 +23,22 @@ llamaEmpresa(value:String){
     return this.edad
   }
   
+  habilitacionCuadro=false;
+
+  usuRegistrado=true;
+
+getRegistroUsuario(){
+
+  this.usuRegistrado=true;
+}
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+
 }
+
