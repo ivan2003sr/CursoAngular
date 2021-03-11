@@ -2,11 +2,12 @@
 <p>Apellido del Empleado: {{apellido}}</p>
 <p>Edad del Empleado: {{getEdad()>18 ? "Mayor de edad" : "Menor de edad"}}</p>
 <p>Empresa del Empleado: {{empresa.value}}</p>
+<p>Empresa con binding bidireccional: {{empresa2}}</p>
 
-Introduce nombre: <input type="text" #nombre (keyup)=0 [disabled]="habilitacionCuadro">
+Introduce nombre: <input type="text" #nombre (keyup)=0 [disabled]="deshabilitacionCuadro">
 
 Introduce la empresa: <input type="text" #empresa>
-
+Introduce la empresa2: <input type="text"[(ngModel)]="empresa2">  <!--(input)="cambiaEmpresa2($event)"> -->
 <br/>
 <br/>
 

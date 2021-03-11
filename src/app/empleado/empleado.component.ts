@@ -14,7 +14,16 @@ export class EmpleadoComponent implements OnInit {
 
   private edad=32;
 
- // empresa="Edemsa";
+ 
+ empresa2="Google";
+
+// NO HACE FALTA PARA HACER EL 2 WAY BINDING, LA COMENTAMOS
+/*
+cambiaEmpresa2(event:Event){
+  this.empresa2=(<HTMLInputElement>event.target).value;
+}
+*/
+
 llamaEmpresa(value:String){
 
 }
@@ -23,7 +32,7 @@ llamaEmpresa(value:String){
     return this.edad
   }
   
-  habilitacionCuadro=false;
+  deshabilitacionCuadro=false;
 
   usuRegistrado=true;
 
